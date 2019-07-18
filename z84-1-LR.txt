@@ -1,0 +1,197 @@
+diff
+
+# version
+# INAV/MATEKF411 2.2.1 Jul  3 2019 / 22:50:30 (a6d847482)
+# GCC-8.2.1 20181213 (release) [gcc-8-branch revision 267074]
+
+# resources
+
+# mixer
+mmix 0  1.000  0.000  0.000  0.000
+mmix 1  1.000  0.000  0.000  0.000
+
+# servo mix
+smix 0 3 0 50 0 -1
+smix 1 3 1 50 0 -1
+smix 2 4 0 -50 0 -1
+smix 3 4 1 50 0 -1
+
+# servo
+servo 4 1000 2000 1500 -100
+
+# logic
+
+# feature
+feature MOTOR_STOP
+feature GPS
+feature PWM_OUTPUT_ENABLE
+
+# beeper
+
+# map
+map TAER
+
+# serial
+serial 0 2 115200 115200 0 115200
+serial 1 64 115200 115200 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 2 1300 2100
+aux 1 3 1 1700 2100
+aux 2 8 0 1300 2100
+aux 3 35 1 1700 2100
+aux 4 10 1 900 1300
+aux 5 14 2 1300 1700
+aux 6 18 7 900 1800
+aux 7 32 3 1300 1700
+aux 8 33 3 1700 2100
+
+# adjrange
+
+# rxrange
+
+# temp_sensor
+
+# wp
+#wp 0 invalid
+
+# osd_layout
+osd_layout 0 0 2 2 V
+osd_layout 0 1 24 13 V
+osd_layout 0 3 8 6 H
+osd_layout 0 4 8 6 H
+osd_layout 0 7 8 13 V
+osd_layout 0 9 1 2 H
+osd_layout 0 10 2 13 H
+osd_layout 0 11 2 12 V
+osd_layout 0 12 1 13 V
+osd_layout 0 13 2 5 V
+osd_layout 0 14 24 2 V
+osd_layout 0 15 2 6 V
+osd_layout 0 19 3 7 H
+osd_layout 0 20 15 1 H
+osd_layout 0 21 6 1 H
+osd_layout 0 22 14 13 V
+osd_layout 0 23 24 5 V
+osd_layout 0 24 13 4 H
+osd_layout 0 26 2 7 V
+osd_layout 0 28 17 13 V
+osd_layout 0 30 2 14 V
+osd_layout 0 32 24 10 H
+osd_layout 0 33 23 7 V
+osd_layout 0 34 11 4 H
+osd_layout 0 35 2 11 V
+osd_layout 0 38 23 9 H
+osd_layout 0 40 24 6 V
+osd_layout 0 41 24 7 H
+osd_layout 0 46 23 8 H
+osd_layout 0 47 23 7 H
+osd_layout 0 54 24 10 H
+osd_layout 0 85 22 1 H
+osd_layout 0 86 24 7 H
+osd_layout 0 87 24 8 H
+osd_layout 0 96 25 7 H
+osd_layout 0 97 9 2 V
+osd_layout 0 104 24 8 H
+osd_layout 1 0 2 2 V
+osd_layout 1 1 24 13 V
+osd_layout 1 7 8 13 V
+osd_layout 1 11 2 10 H
+osd_layout 1 12 1 13 V
+osd_layout 1 13 2 5 V
+osd_layout 1 14 24 2 V
+osd_layout 1 15 2 6 V
+osd_layout 1 22 14 13 V
+osd_layout 1 23 24 5 V
+osd_layout 1 28 17 13 V
+osd_layout 1 30 2 14 V
+osd_layout 1 40 24 6 V
+osd_layout 2 0 2 2 V
+osd_layout 2 1 24 13 V
+osd_layout 2 12 1 13 V
+osd_layout 2 14 24 2 V
+osd_layout 2 22 14 13 V
+osd_layout 2 30 2 14 V
+
+# master
+set gyro_hardware_lpf = 20HZ
+set acc_hardware = MPU6000
+set acczero_x = 63
+set acczero_z = -387
+set accgain_x = 4095
+set accgain_y = 4066
+set accgain_z = 4044
+set mag_hardware = NONE
+set baro_hardware = BMP280
+set pitot_hardware = NONE
+set rssi_channel = 12
+set serialrx_provider = CRSF
+set max_throttle = 1900
+set failsafe_procedure = RTH
+set align_board_pitch = 100
+set vbat_scale = 1110
+set current_meter_scale = 426
+set current_meter_offset = 95
+set platform_type = AIRPLANE
+set model_preview_type = 8
+set small_angle = 180
+set gps_provider = UBLOX7
+set gps_sbas_mode = EGNOS
+set nav_extra_arming_safety = OFF
+set nav_rth_climb_first = OFF
+set nav_rth_allow_landing = NEVER
+set nav_rth_altitude = 6500
+set nav_fw_cruise_thr = 1450
+set nav_fw_min_thr = 1375
+set nav_fw_max_thr = 1900
+set nav_fw_bank_angle = 20
+set nav_fw_dive_angle = 20
+set nav_fw_pitch2thr = 15
+set nav_fw_launch_timeout = 60000
+set nav_fw_launch_climb_angle = 23
+set nav_fw_allow_manual_thr_increase = ON
+set osd_video_system = PAL
+set osd_rssi_alarm = 80
+set osd_time_alarm = 35
+set osd_alt_alarm = 500
+set osd_dist_alarm = 8000
+set osd_current_alarm = 10
+set osd_left_sidebar_scroll = ALTITUDE
+set osd_right_sidebar_scroll = GROUND_SPEED
+set osd_coordinate_digits = 8
+set name = PL-Z84/1
+set vtx_channel = 8
+set vtx_power = 2
+set vtx_low_power_disarm = UNTIL_FIRST_ARM
+set vtx_freq = 5880
+
+# profile
+profile 3
+
+set fw_p_pitch = 30
+set fw_i_pitch = 30
+set fw_ff_pitch = 140
+set fw_p_roll = 20
+set fw_i_roll = 25
+set fw_ff_roll = 75
+set fw_p_yaw = 0
+set fw_i_yaw = 0
+set fw_ff_yaw = 0
+set nav_fw_heading_p = 185
+
+# battery_profile
+battery_profile 1
+
+set vbat_min_cell_voltage = 290
+set vbat_warning_cell_voltage = 300
+set battery_capacity = 3500
+set battery_capacity_warning = 1050
+set battery_capacity_critical = 700
+
+# 

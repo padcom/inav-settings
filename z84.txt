@@ -1,0 +1,162 @@
+# version
+# INAV/MATEKF411 2.1.0 Feb 25 2019 / 17:02:49 (65b0ec142)
+# GCC-7.3.1 20180622 (release) [ARM/embedded-7-branch revision 261907]
+
+# resources
+
+# mixer
+mmix 0  1.000  0.000  0.000  0.000
+mmix 1  1.000  0.000  0.000  0.000
+
+# servo mix
+smix 0 3 0 50 0
+smix 1 3 1 50 0
+smix 2 4 0 -50 0
+smix 3 4 1 50 0
+
+# servo
+servo 4 1000 2000 1500 -100
+
+# feature
+feature -TX_PROF_SEL
+feature MOTOR_STOP
+feature GPS
+feature PWM_OUTPUT_ENABLE
+
+# beeper
+
+# map
+map TAER
+
+# serial
+serial 20 1 115200 115200 0 115200
+serial 1 2 115200 115200 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 3 1300 2100
+aux 1 1 2 1700 2100
+aux 2 2 2 1300 1700
+aux 3 3 5 1700 2100
+aux 4 8 1 1500 2100
+aux 5 35 5 1300 2075
+aux 6 10 2 900 1300
+aux 7 14 3 1325 1700
+aux 8 18 7 900 1300
+
+# adjrange
+
+# rxrange
+
+# temp_sensor
+
+# osd_layout
+osd_layout 0 0 23 1 V
+osd_layout 0 1 2 13 V
+osd_layout 0 3 8 6 H
+osd_layout 0 4 8 6 H
+osd_layout 0 7 13 13 V
+osd_layout 0 9 1 2 H
+osd_layout 0 11 2 11 V
+osd_layout 0 12 2 12 V
+osd_layout 0 13 8 11 V
+osd_layout 0 14 22 2 V
+osd_layout 0 15 17 11 V
+osd_layout 0 20 4 2 V
+osd_layout 0 21 4 1 V
+osd_layout 0 22 14 11 V
+osd_layout 0 23 15 2 V
+osd_layout 0 25 23 5 V
+osd_layout 0 26 24 7 V
+osd_layout 0 28 23 12 V
+osd_layout 0 30 1 14 V
+osd_layout 0 33 1 7 V
+osd_layout 0 35 24 11 V
+osd_layout 0 40 15 1 V
+osd_layout 0 41 14 8 V
+osd_layout 0 63 11 7 V
+osd_layout 0 72 11 8 H
+osd_layout 0 80 2 6 H
+osd_layout 0 84 2 8 H
+
+# master
+set looptime = 2000
+set gyro_hardware_lpf = 20HZ
+set acc_hardware = MPU6000
+set acczero_x = 70
+set acczero_y = -10
+set acczero_z = -362
+set accgain_x = 4094
+set accgain_y = 4060
+set accgain_z = 4012
+set mag_hardware = NONE
+set baro_hardware = NONE
+set pitot_hardware = NONE
+set rssi_channel = 17
+set serialrx_provider = CRSF
+set failsafe_procedure = RTH
+set align_board_pitch = 100
+set current_meter_scale = 423
+set platform_type = AIRPLANE
+set model_preview_type = 8
+set small_angle = 180
+set gps_provider = UBLOX7
+set gps_sbas_mode = EGNOS
+set nav_extra_arming_safety = OFF
+set nav_rth_climb_first = OFF
+set nav_rth_allow_landing = NEVER
+set nav_rth_altitude = 7000
+set nav_fw_cruise_thr = 1500
+set nav_fw_bank_angle = 25
+set nav_fw_loiter_radius = 4500
+set osd_rssi_alarm = 60
+set osd_time_alarm = 60
+set osd_alt_alarm = 350
+set osd_dist_alarm = 1700
+set osd_crosshairs_style = AIRCRAFT
+
+# profile
+profile 1
+
+set mc_p_pitch = 2
+set mc_i_pitch = 15
+set mc_d_pitch = 70
+set mc_p_roll = 2
+set mc_i_roll = 15
+set mc_d_roll = 30
+set mc_p_yaw = 6
+set mc_i_yaw = 10
+set mc_d_yaw = 60
+set mc_p_level = 10
+set max_angle_inclination_rll = 600
+set max_angle_inclination_pit = 600
+set nav_mc_pos_z_p = 40
+set nav_mc_pos_z_i = 5
+set nav_mc_pos_z_d = 10
+set nav_mc_vel_z_p = 0
+set nav_mc_vel_z_i = 0
+set nav_mc_vel_z_d = 0
+set nav_mc_pos_xy_p = 75
+set nav_mc_pos_xy_i = 5
+set nav_mc_pos_xy_d = 8
+set nav_mc_vel_xy_p = 0
+set nav_mc_vel_xy_i = 0
+set nav_mc_vel_xy_d = 0
+set tpa_rate = 33
+set tpa_breakpoint = 1300
+set roll_rate = 35
+set pitch_rate = 9
+
+# battery_profile
+battery_profile 1
+
+set bat_cells = 3
+set vbat_min_cell_voltage = 320
+set battery_capacity = 3500
+set battery_capacity_warning = 1000
+set battery_capacity_critical = 800
