@@ -1,9 +1,0 @@
-set vbat_min_cell_voltage = 310
-set vbat_warning_cell_voltage = 320
-set battery_capacity = 3500
-set battery_capacity_warning = 1400
-set battery_capacity_critical = 1050
-
-set vbat_scale = 1110
-set current_meter_scale = 423
-set current_meter_offset = 95
