@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "npm start --workspace packages/configurator"
+    "start": "npm start --workspace packages/configurator",
+    "build": "npm run build --if-exists --workspaces"
   },
   "workspaces": [
     "packages/configurator"
