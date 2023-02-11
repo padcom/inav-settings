@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "npm start --workspace packages/configurator"
+  },
+  "workspaces": [
+    "packages/configurator"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "message": {
+    "text": "Hello, world! from data.json",
+    "status": 1234
+  },
+  "info": true
+}

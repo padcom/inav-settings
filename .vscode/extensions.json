@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "csstools.postcss",
+    "cpylua.language-postcss",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "ghmcadams.lintlens",
+    "mikestead.dotenv",
+    "vue.volar",
+    "hollowtree.vue-snippets",
+    "markis.code-coverage",
+    "zixuanchen.vitest-explorer"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.app.json",
+  "include": [
+    "src/env.d.ts",
+    "src/**/*.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "./**/*.test.ts",
+    "./*.d.ts",
+    ".eslintrc.cjs",
+    "tailwind.config.cjs",
+    "postcss.config.cjs",
+    "vite.config.ts",
+  ],
+  "exclude": []
+}
